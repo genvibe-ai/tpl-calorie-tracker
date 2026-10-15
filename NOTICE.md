@@ -1,6 +1,6 @@
 # Notice
 
-Morsel is based on Zest by Appllama (MIT), © 2026 Appllama. The original MIT license is kept in [LICENSE](LICENSE).
+Crumbwise is based on Zest by Appllama (MIT), © 2026 Appllama. The original MIT license is kept in [LICENSE](LICENSE).
 
 Changes from Zest: renamed and restyled (warmer cream palette, paprika accent); the lemon mascot and the
 Skia backdrop were replaced with an original shape-based bun drawn with react-native-svg; brand, colours,
@@ -9,7 +9,7 @@ receipt and in answers; iOS-only features (Liquid Glass, SwiftUI buttons, masked
 and web fallbacks so the app runs in Expo Go; Zest's documentation, tests, scripts and build tooling were
 removed. Zest's ink-and-paper food stickers in `assets/stickers/` are kept from the original under its MIT license.
 
-Morsel is fictional. Calorie and macro values are sample estimates, not nutrition advice, and the app does
+Crumbwise is fictional. Calorie and macro values are sample estimates, not nutrition advice, and the app does
 not recognise food in photos.
 
 Dependencies keep their own licenses. Parts of the project scaffold come from the Expo project template:

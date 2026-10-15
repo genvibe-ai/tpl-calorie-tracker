@@ -1,8 +1,8 @@
-# Morsel
+# Crumbwise
 
 A one-screen food diary for iPhone and Android, built with Expo SDK 57 and Expo Router. Snap a meal, pick
 breakfast, lunch, dinner or a snack, and get a little receipt with calories and macros. Ask "how much
-protein today?" for a visual answer, and tap Morsel, the bun, to open a calendar made of meal stickers.
+protein today?" for a visual answer, and tap Crumbwise, the bun, to open a calendar made of meal stickers.
 
 Runs in the Expo Go app (SDK 57) on iPhone and Android, and in the browser.
 

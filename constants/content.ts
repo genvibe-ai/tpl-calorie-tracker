@@ -1,14 +1,14 @@
 /**
- * Morsel: the brand, colours, copy, sample meals and goals all live in this
+ * Crumbwise: the brand, colours, copy, sample meals and goals all live in this
  * one file. Rebrand the app by editing the values below; every screen reads
  * from here. Meal photos are in assets/meals/ (JPEG, light background).
  */
 import type { ImageSourcePropType } from "react-native";
 
 export const brand = {
-  name: "Morsel",
+  name: "Crumbwise",
   /** The little bun on screen; used in accessibility labels. */
-  companion: "Morsel",
+  companion: "Crumbwise",
 };
 
 /** Whose diary this is. The welcome reads "Good evening, Sam." */

@@ -1,5 +1,5 @@
 /**
- * Morsel, the companion: a little bun with a bite taken out, drawn from plain
+ * Crumbwise, the companion: a little bun with a bite taken out, drawn from plain
  * shapes (react-native-svg) on a 140-unit grid. Its parts are layered views,
  * so the gaze, head turn, blink, lean and hop run on the UI thread on iOS,
  * Android and the web alike. Colours come from mascotColors in content.ts.
@@ -131,22 +131,22 @@ export function Mascot({
           <Animated.View style={[StyleSheet.absoluteFill, head]}>
             <Layer>
               <Defs>
-                <ClipPath id="morsel-body">
+                <ClipPath id="crumbwise-body">
                   <Path d={BODY} />
                 </ClipPath>
-                <RadialGradient id="morsel-fill" cx="0.36" cy="0.3" r="0.78">
+                <RadialGradient id="crumbwise-fill" cx="0.36" cy="0.3" r="0.78">
                   <Stop offset="0" stopColor={c.bodyLight} />
                   <Stop offset="0.62" stopColor={c.body} />
                   <Stop offset="1" stopColor={c.bodyDark} />
                 </RadialGradient>
-                <LinearGradient id="morsel-belly" x1="0" y1="0" x2="0" y2="1">
+                <LinearGradient id="crumbwise-belly" x1="0" y1="0" x2="0" y2="1">
                   <Stop offset="0" stopColor={c.belly} stopOpacity={0} />
                   <Stop offset="1" stopColor={c.belly} stopOpacity={0.55} />
                 </LinearGradient>
               </Defs>
-              <G clipPath="url(#morsel-body)">
-                <Rect x={0} y={0} width={140} height={140} fill="url(#morsel-fill)" />
-                <Rect x={0} y={94} width={140} height={26} fill="url(#morsel-belly)" />
+              <G clipPath="url(#crumbwise-body)">
+                <Rect x={0} y={0} width={140} height={140} fill="url(#crumbwise-fill)" />
+                <Rect x={0} y={94} width={140} height={26} fill="url(#crumbwise-belly)" />
                 {/* The bite shows the soft crumb inside. */}
                 <Path d={BITE} fill="none" stroke={c.crumb} strokeWidth={7.5} strokeLinejoin="round" />
                 <Ellipse cx={44} cy={60} rx={14} ry={6.5} transform="rotate(-48 44 60)" fill={c.sheen} opacity={0.85} />

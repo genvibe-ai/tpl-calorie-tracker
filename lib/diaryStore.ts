@@ -40,7 +40,7 @@ export const useDiary = create<Diary>()(
       seedDemo: () => set({ meals: demoMeals(), guide: goals.dailyKcal, sampleKey: SAMPLE_KEY }),
     }),
     {
-      name: "morsel-diary",
+      name: "crumbwise-diary",
       version: 1,
       storage: createJSONStorage(() => diaryStorage),
       partialize: (s) => ({ meals: s.meals, guide: s.guide, sampleKey: s.sampleKey }),

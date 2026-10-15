@@ -1,9 +1,9 @@
-# Morsel: calorie-tracker template
+# Crumbwise: calorie-tracker template
 
 ## What it is
 A one-screen food diary for Expo SDK 57 + Expo Router that runs in Expo Go on iPhone and Android (and on the web).
 Log a meal photo (camera, library or "Try a sample meal"), pick the meal type, get a receipt with calories and
-macros; ask "how much protein today?" and get a visual answer; tap Morsel (the bun) for the sticker calendar.
+macros; ask "how much protein today?" and get a visual answer; tap Crumbwise (the bun) for the sticker calendar.
 Answers are local (lib/diary.ts answerAbout): no server, AI service, account or analytics. The diary is saved
 on the device; chats reset on relaunch. `?demo=1` resets the diary to the sample one.
 

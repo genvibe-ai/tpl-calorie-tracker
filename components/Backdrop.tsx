@@ -127,16 +127,16 @@ export function Backdrop({ scene }: { scene: Scene }) {
       />
       {/* The studio light behind the companion. It is white, never coloured. */}
       <Animated.View style={[styles.layer, { width: HALO_W, height: HALO_H }, halo]}>
-        <Bloom id="morsel-halo" color="#FFFFFF" width={HALO_W} height={HALO_H} />
+        <Bloom id="crumbwise-halo" color="#FFFFFF" width={HALO_W} height={HALO_H} />
       </Animated.View>
       <Animated.View style={[styles.layer, { width: glowW, height: GLOW_RY * 4 }, dockGlow]}>
-        <Bloom id="morsel-dock" color={palette.glow} width={glowW} height={GLOW_RY * 4} />
+        <Bloom id="crumbwise-dock" color={palette.glow} width={glowW} height={GLOW_RY * 4} />
       </Animated.View>
       <Animated.View style={[styles.layer, { width: RUN_RX * 4, height: RUN_RY * 4 }, runner]}>
-        <Bloom id="morsel-runner" color={palette.glow} width={RUN_RX * 4} height={RUN_RY * 4} />
+        <Bloom id="crumbwise-runner" color={palette.glow} width={RUN_RX * 4} height={RUN_RY * 4} />
       </Animated.View>
       <Animated.View style={[styles.layer, { width: breathRX * 4, height: BREATH_RY * 4 }, breath]}>
-        <Bloom id="morsel-breath" color={light} width={breathRX * 4} height={BREATH_RY * 4} />
+        <Bloom id="crumbwise-breath" color={light} width={breathRX * 4} height={BREATH_RY * 4} />
       </Animated.View>
       <Animated.View style={[styles.layer, { width, height: WAVE_H }, releaseWave]}>
         <LinearGradient
@@ -147,10 +147,10 @@ export function Backdrop({ scene }: { scene: Scene }) {
       </Animated.View>
       {/* Where the figure stands: a wide soft shadow and a closer, darker one. */}
       <Animated.View style={[styles.layer, { width: SHADOW_W, height: SHADOW_H }, shadow]}>
-        <Bloom id="morsel-shadow" color={palette.ink} width={SHADOW_W} height={SHADOW_H} peak={0.1} />
+        <Bloom id="crumbwise-shadow" color={palette.ink} width={SHADOW_W} height={SHADOW_H} peak={0.1} />
       </Animated.View>
       <Animated.View style={[styles.layer, { width: CORE_W, height: CORE_H }, core]}>
-        <Bloom id="morsel-shadow-core" color={palette.ink} width={CORE_W} height={CORE_H} peak={0.13} />
+        <Bloom id="crumbwise-shadow-core" color={palette.ink} width={CORE_W} height={CORE_H} peak={0.13} />
       </Animated.View>
     </View>
   );
