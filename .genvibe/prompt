@@ -1,0 +1,6 @@
+This project started from the GenVibe Morsel calorie-tracker template (Expo SDK 57, Expo Router, runs in Expo Go on iPhone and Android, and on the web). Read .genvibe/memory.md first.
+When the user describes their app, first update constants/content.ts: brand name, user name, palette, mascot colours, goals, sample meals (name, kcal, macros, photo) and copy. Every screen reads from it.
+Keep the one-screen structure (components/DiaryScreen.tsx) unless asked otherwise; new screens go in app/ as Expo Router routes.
+Keep the platform fallbacks: *.ios.tsx files hold Liquid Glass, SwiftUI and blur code; the plain .tsx files are the Android and web versions. Icons go through components/ui/Icon.tsx with both an SF Symbol and a Material Symbol name.
+Never add modules that need a development build (no MMKV, Nitro modules, react-native-track-player, zeego, expo-dev-client or custom native code). Install Expo packages with `npx expo install`, then run `yarn dev`.
+Meal photos live in assets/meals/ as real JPEG files. Do not set ios.bundleIdentifier or android.package in app.json.
